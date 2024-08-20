@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scorez</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <h1>Scorez</h1>
+
+    <div class="table">
+        <div class="thead">
+            <div>Team name</div>
+            <div>PP</div>
+            <div>KP</div>
+        </div>
+    </div>
+    <button id="addTeamB" class="btn">Add Team</button>
+    <button id="clear" class="btn" onclick="clearStorage()">Clear</button>
+
+    <dialog id="addTeamD">
+        <div>
+            <label for="team">Team:</label>
+            <input type="text" id="teamName" name="team">
+            <button onclick="newTeam(this.previousElementSibling)">Add</button>
+        </div>
+    </dialog>
+    
+</body>
+</html>
